@@ -56,7 +56,16 @@ namespace Assm2_OOP
 
             #endregion
 
+            Car C1;
+            C1 = new Car(10 ,"BMW" , 290);
+            Console.WriteLine(C1);
 
+            //Car C2;
+            // C2 = new Car(10 , "Hyndai");
+            //Console.WriteLine(C2);
+
+            //Car C3 = new Car(10);
+            //Console.WriteLine(C3);
 
         }
     }
