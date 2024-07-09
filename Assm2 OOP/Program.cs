@@ -1,4 +1,5 @@
 ﻿using Assm2_OOP.Encapsulation;
+using Assm2_OOP.Inertitance;
 
 namespace Assm2_OOP
 {
@@ -56,16 +57,26 @@ namespace Assm2_OOP
 
             #endregion
 
-            Car C1;
-            C1 = new Car(10 ,"BMW" , 290);
-            Console.WriteLine(C1);
+            //Car C1;
+            //C1 = new Car(10 ,"BMW" , 290);
+            //Console.WriteLine(C1);
 
-            //Car C2;
+            ////Car C2;
             // C2 = new Car(10 , "Hyndai");
             //Console.WriteLine(C2);
 
             //Car C3 = new Car(10);
             //Console.WriteLine(C3);
+
+
+
+            //Parent P = new Parent( 1 , 2 );
+            //Console.WriteLine(P);
+            //Console.WriteLine(P.Prodict());
+
+            Child C = new Child( 3 , 4 , 5);
+            Console.WriteLine(C.ToString());
+            Console.WriteLine(C.Prodict());
 
         }
     }
