@@ -57,6 +57,7 @@ namespace Assm2_OOP
 
             #endregion
 
+            #region Car
             //Car C1;
             //C1 = new Car(10 ,"BMW" , 290);
             //Console.WriteLine(C1);
@@ -67,16 +68,34 @@ namespace Assm2_OOP
 
             //Car C3 = new Car(10);
             //Console.WriteLine(C3);
+            #endregion
 
 
-
+            #region Parent
             //Parent P = new Parent( 1 , 2 );
             //Console.WriteLine(P);
             //Console.WriteLine(P.Prodict());
 
-            Child C = new Child( 3 , 4 , 5);
-            Console.WriteLine(C.ToString());
-            Console.WriteLine(C.Prodict());
+            //Child C = new Child( 3 , 4 , 5);
+            //Console.WriteLine(C.ToString());
+            //Console.WriteLine(C.Prodict());
+
+            #endregion
+
+            #region AccessMod
+
+            TypeA ObjA = new TypeA();
+            //ObjA.X = 10;
+            //ObjA.Y = 20;
+            //ObjA.Z = 40;
+
+            TypeB ObjB = new TypeB();
+            //ObjB.M = 30;
+            //ObjB.X = 10;
+            //ObjB.Y = 20;
+            //ObjB.Z = 40;
+
+            #endregion
 
         }
     }
