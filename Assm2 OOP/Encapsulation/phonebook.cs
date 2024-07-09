@@ -33,14 +33,14 @@ namespace Assm2_OOP.Encapsulation
 
         #region Methods
 
-        public void AddPerson(int Postion , string name , int Number)
+        public void AddPerson(int Postion, string name, int Number)
         {
             if (Numbers is not null && Names.Length > 0)
             {
                 Names[Postion] = name;
                 Numbers[Postion] = Number;
             }
-       
+
 
         }
 
@@ -50,23 +50,23 @@ namespace Assm2_OOP.Encapsulation
             if (Names is not null && Numbers is not null) {
                 for (int i = 0; i < Numbers.Length; i++)
                 {
-                    if(Names[i] == name)
+                    if (Names[i] == name)
                     {
-                    return Numbers[i];
+                        return Numbers[i];
                     }
                 }
-                }
+            }
             return -1;
-            
-        
+
+
         }
 
 
 
-        public void SetPersonNubmer(string name , int newNumbers) {
-        if(Names is not null && Numbers is not null)
+        public void SetPersonNubmer(string name, int newNumbers) {
+            if (Names is not null && Numbers is not null)
             {
-                for (int i = 0;i < Names.Length; i++)
+                for (int i = 0; i < Names.Length; i++)
                 {
                     if (Names[i] == name)
                     {
@@ -78,6 +78,42 @@ namespace Assm2_OOP.Encapsulation
         #endregion
 
 
+        #endregion
+
+
+        #region Index
+        public int this[string name]
+            {
+            get {
+            if(Names is not null && Numbers is not null)
+                
+                    for(int i = 0;i < Names.Length; i++)
+                    
+                        if(Names[i] == name)
+                            return Numbers[i];
+                        return -1;
+                    
+                
+            }
+            set
+            {
+                if (Names is not null && Numbers is not null)
+                {
+                    for (int i = 0; i < Names.Length; i++)
+                    {
+                        if (Names[i] == name)
+                             Numbers[i] = value;
+                        break;                        
+                    }
+                }
+
+            }
+            }
+
+
+        public string this[int index] {
+            get { return $"{index} :: {Names[index]} :: { Numbers[index]}"; }
+        }
         #endregion
 
     }

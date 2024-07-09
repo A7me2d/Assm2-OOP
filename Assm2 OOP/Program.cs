@@ -31,15 +31,29 @@ namespace Assm2_OOP
 
 
             #region indexer
-            phonebook Note = new phonebook(3);
-            Note.AddPerson(0, "ahmed", 123);
-            Note.AddPerson(0, "hany", 512);
-            Note.AddPerson(0, "makram", 248);
+            //phonebook Note = new phonebook(3);
+            //Note.AddPerson(0, "ahmed", 123);
+            //Note.AddPerson(1, "hany", 512);
+            //Note.AddPerson(2, "makram", 248);
 
 
 
-            int AhmedNumber = Note.GetNumber("Ahmed"); ;
-            Console.WriteLine(AhmedNumber == 123 ? "Person not found" : AhmedNumber);
+            //int AhmedNumber = Note.GetNumber("Ahmed"); ;
+            //Console.WriteLine(AhmedNumber == 123 ? "Person not found" : AhmedNumber);
+
+            //Console.WriteLine(Note["Amr"]);
+            //Note["Amr"] = 500;
+            //Console.WriteLine(Note["Amr"]);
+
+            //Console.WriteLine(Note);
+
+            //for (int i = 0; i < Note.Size; i++)
+            //{
+            //    Console.WriteLine(Note[i]);
+            //}
+
+
+
             #endregion
 
 
